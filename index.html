@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base de datos de Soy Luna</title>
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+  <h1>Serie Disney "Soy Luna" - Ejemplos de Tablas HTML/CSS</h1>
+  
+  <!-- Tabla 1 -->
+  <section>
+    <h2>Tabla 1: Bordes y estructura básica</h2>
+    <table class="tabla1">
+      <tr>
+        <td>Personaje</td>
+        <td>Edad</td>
+        <td>Patinaje</td>
+      </tr>
+      <tr>
+        <td>Luna Valente</td>
+        <td>16</td>
+        <td>Profesional</td>
+      </tr>
+      <tr>
+        <td>Simón</td>
+        <td>17</td>
+        <td>Intermedio</td>
+      </tr>
+    </table>
+  </section>
+  
+  <!-- Tabla 2 -->
+  <section>
+    <h2>Tabla 2: Uso de &lt;thead&gt; y &lt;tbody&gt;</h2>
+    <table class="tabla2">
+      <thead>
+        <tr>
+          <th>Personaje</th>
+          <th>Edad</th>
+          <th>Patinaje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Luna Valente</td>
+          <td>16</td>
+          <td>Profesional</td>
+        </tr>
+        <tr>
+          <td>Simón</td>
+          <td>17</td>
+          <td>Intermedio</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <!-- Tabla 3 -->
+  <section>
+    <h2>Tabla 3: colspan para combinar celdas horizontales</h2>
+    <table class="tabla3">
+      <tr>
+        <th>Personaje</th>
+        <th colspan="2">Detalles</th>
+      </tr>
+      <tr>
+        <td>Luna Valente</td>
+        <td>Edad: 16</td>
+        <td>Patinaje: Profesional</td>
+      </tr>
+      <tr>
+        <td>Simón</td>
+        <td>Edad: 17</td>
+        <td>Patinaje: Intermedio</td>
+      </tr>
+    </table>
+  </section>
+  
+  <!-- Tabla 4 -->
+  <section>
+    <h2>Tabla 4: rowspan para combinar celdas verticales</h2>
+    <table class="tabla4">
+      <tr>
+        <th rowspan="2">Personaje</th>
+        <th>Edad</th>
+        <th>Patinaje</th>
+      </tr>
+      <tr>
+        <th>Habilidad</th>
+        <th>Estilo</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Luna Valente</td>
+        <td>16</td>
+        <td>Profesional</td>
+      </tr>
+      <tr>
+        <td>Experta</td>
+        <td>Moderno</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Simón</td>
+        <td>17</td>
+        <td>Intermedio</td>
+      </tr>
+      <tr>
+        <td>Bueno</td>
+        <td>Clásico</td>
+      </tr>
+    </table>
+  </section>
+  
+  <!-- Tabla 5 -->
+  <section>
+    <h2>Tabla 5: Efecto hover en filas</h2>
+    <table class="tabla5">
+      <thead>
+        <tr>
+          <th>Personaje</th>
+          <th>Edad</th>
+          <th>Patinaje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Luna Valente</td>
+          <td>16</td>
+          <td>Profesional</td>
+        </tr>
+        <tr>
+          <td>Simón</td>
+          <td>17</td>
+          <td>Intermedio</td>
+        </tr>
+        <tr>
+          <td>Ambar</td>
+          <td>16</td>
+          <td>Avanzado</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <!-- Tabla 6 -->
+  <section>
+    <h2>Tabla 6: Zebra striping (filas alternas)</h2>
+    <table class="tabla6">
+      <thead>
+        <tr>
+          <th>Personaje</th>
+          <th>Edad</th>
+          <th>Patinaje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Luna Valente</td><td>16</td><td>Profesional</td></tr>
+        <tr><td>Simón</td><td>17</td><td>Intermedio</td></tr>
+        <tr><td>Ambar</td><td>16</td><td>Avanzado</td></tr>
+        <tr><td>Matías</td><td>17</td><td>Principiante</td></tr>
+        <tr><td>Nazareno</td><td>16</td><td>Avanzado</td></tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <!-- Tabla 7 -->
+  <section>
+    <h2>Tabla 7: Diseño responsivo (max-width)</h2>
+    <table class="tabla7">
+      <thead>
+        <tr>
+          <th>Personaje</th>
+          <th>Edad</th>
+          <th>Patinaje</th>
+          <th>Ciudad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Luna Valente</td><td>16</td><td>Profesional</td><td>Buenos Aires</td></tr>
+        <tr><td>Simón</td><td>17</td><td>Intermedio</td><td>Buenos Aires</td></tr>
+        <tr><td>Ambar</td><td>16</td><td>Avanzado</td><td>Buenos Aires</td></tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <!-- Tabla 8 -->
+  <section>
+    <h2>Tabla 8: Agrupación con &lt;colgroup&gt;</h2>
+    <table class="tabla8">
+      <colgroup>
+        <col span="1" style="background-color:#fce4ec">
+        <col span="2" style="background-color:#f8bbd0">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Personaje</th>
+          <th>Edad</th>
+          <th>Patinaje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Luna Valente</td><td>16</td><td>Profesional</td></tr>
+        <tr><td>Simón</td><td>17</td><td>Intermedio</td></tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <!-- Tabla 9 -->
+  <section>
+    <h2>Tabla 9: Uso de &lt;caption&gt; y &lt;th scope&gt;</h2>
+    <table class="tabla9">
+      <caption>Información de Personajes Soy Luna</caption>
+      <thead>
+        <tr>
+          <th scope="col">Personaje</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Patinaje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Luna Valente</th>
+          <td>16</td>
+          <td>Profesional</td>
+        </tr>
+        <tr>
+          <th scope="row">Simón</th>
+          <td>17</td>
+          <td>Intermedio</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <!-- Tabla 10 -->
+  <section>
+    <h2>Tabla 10: Tabla anidada (tabla dentro de otra)</h2>
+    <table class="tabla10">
+      <thead>
+        <tr>
+          <th>Personaje</th>
+          <th>Detalles</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Luna Valente</td>
+          <td>
+            <table>
+              <tr><td>Edad</td><td>16</td></tr>
+              <tr><td>Patinaje</td><td>Profesional</td></tr>
+              <tr><td>Ciudad</td><td>Buenos Aires</td></tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>Simón</td>
+          <td>
+            <table>
+              <tr><td>Edad</td><td>17</td></tr>
+              <tr><td>Patinaje</td><td>Intermedio</td></tr>
+              <tr><td>Ciudad</td><td>Buenos Aires</td></tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  </body>
+  </html>
+  

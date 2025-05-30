@@ -1,0 +1,267 @@
+/* Estilos generales para todas las tablas */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fdf0f7;
+  color: #333;
+  margin: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #000000; /* Rosa Soy Luna */
+  margin-bottom: 10px;
+}
+
+section {
+  margin: 40px auto;
+  max-width: 800px;
+  background: #fff0f6;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+/* Tabla 1: bordes básicos */
+.tabla1 {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid #ff4081;
+}
+
+.tabla1 td {
+  border: 1px solid #ff4081;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Tabla 2: thead y tbody */
+.tabla2 {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid #29b6f6;
+}
+
+.tabla2 thead {
+  background-color: #29b6f6;
+  color: white;
+}
+
+.tabla2 th, .tabla2 td {
+  border: 1px solid #29b6f6;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Tabla 3: colspan */
+.tabla3 {
+  border-collapse: collapse;
+  width: 55%;
+  margin: 0 auto;
+  border: 2px solid #f06292;
+}
+
+.tabla3 th, .tabla3 td {
+  border: 1px solid #f06292;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabla3 th {
+  background-color: #f48fb1;
+  color: white;
+}
+
+/* Tabla 4: rowspan */
+.tabla4 {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid #e91e63;
+  font-family: 'Arial', sans-serif;
+}
+
+.tabla4 th, .tabla4 td {
+  border: 1px solid #e91e63;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabla4 th {
+  background-color: #ec407a;
+  color: white;
+}
+
+/* Tabla 5: efecto hover filas */
+.tabla5 {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid #ba68c8;
+}
+
+.tabla5 th, .tabla5 td {
+  border: 1px solid #ba68c8;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabla5 thead {
+  background-color: #ba68c8;
+  color: white;
+}
+
+.tabla5 tbody tr:hover {
+  background-color: #ce93d8;
+  cursor: pointer;
+}
+
+/* Tabla 6: zebra striping */
+.tabla6 {
+  border-collapse: collapse;
+  width: 65%;
+  margin: 0 auto;
+  border: 2px solid #f57c00;
+  font-family: 'Verdana', sans-serif;
+}
+
+.tabla6 th, .tabla6 td {
+  border: 1px solid #f57c00;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabla6 thead {
+  background-color: #fb8c00;
+  color: white;
+}
+
+.tabla6 tbody tr:nth-child(even) {
+  background-color: #ffe0b2;
+}
+
+/* Tabla 7: diseño responsivo */
+.tabla7 {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 2px solid #00796b;
+  font-family: 'Tahoma', sans-serif;
+}
+
+.tabla7 th, .tabla7 td {
+  border: 1px solid #00796b;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabla7 thead {
+  background-color: #004d40;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .tabla7, .tabla7 thead, .tabla7 tbody, .tabla7 th, .tabla7 td, .tabla7 tr {
+    display: block;
+    width: 100%;
+  }
+  .tabla7 tr {
+    margin-bottom: 15px;
+  }
+  .tabla7 td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .tabla7 td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: 45%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+/* Tabla 8: colgroup */
+.tabla8 {
+  border-collapse: collapse;
+  width: 55%;
+  margin: 0 auto;
+  border: 2px solid #ad1457;
+}
+
+.tabla8 th, .tabla8 td {
+  border: 1px solid #ad1457;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.tabla8 thead {
+  background-color: #c2185b;
+  color: white;
+}
+
+/* Tabla 9: caption y th scope */
+.tabla9 {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+  border: 2px solid #d32f2f;
+  font-family: 'Georgia', serif;
+}
+
+.tabla9 caption {
+  caption-side: top;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+  color: #b71c1c;
+}
+
+.tabla9 th, .tabla9 td {
+  border: 1px solid #d32f2f;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabla9 thead {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Tabla 10: tabla anidada */
+.tabla10 {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto 50px;
+  border: 2px solid #512da8;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.tabla10 th, .tabla10 td {
+  border: 1px solid #512da8;
+  padding: 10px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.tabla10 thead {
+  background-color: #673ab7;
+  color: white;
+}
+
+.tabla10 table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabla10 table td {
+  border: 1px solid #9575cd;
+  padding: 6px;
+  text-align: left;
+  background-color: #ede7f6;
+}
